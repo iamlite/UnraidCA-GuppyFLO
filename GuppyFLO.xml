@@ -7,7 +7,7 @@
     <MyIP />
     <Shell>sh</Shell>
     <Privileged>false</Privileged>
-    <Support>https://github.com/ballaswag/guppyflo/issues</Support>
+    <Support>https://forums.unraid.net/topic/161388-support-guppyflo/</Support>
     <Project>https://github.com/ballaswag/guppyflo/</Project>
     <Overview>GuppyFLO is a self-hosted service that enables local/remote management of multiple
         Klipper printers using Moonraker. 

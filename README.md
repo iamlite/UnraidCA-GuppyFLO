@@ -1,2 +1,1 @@
-# UnraidCA-GuppyFLO
-Unraid Community Applications File For GuppyFLOI
+# Unraid Community Application Image For GuppyFLO

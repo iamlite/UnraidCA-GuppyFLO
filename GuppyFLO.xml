@@ -1,31 +1,64 @@
 <?xml version="1.0"?>
 <Container version="2">
-    <Name>GuppyFLO</Name>
-    <Repository>ballaswag/guppyflo:latest</Repository>
-    <Registry>ghcr.io/ballaswag/guppyflo:latest</Registry>
-    <Network>bridge</Network>
-    <MyIP />
-    <Shell>sh</Shell>
-    <Privileged>false</Privileged>
-    <Support>https://forums.unraid.net/topic/161388-support-guppyflo/</Support>
-    <Project>https://github.com/ballaswag/guppyflo/</Project>
-    <Overview>GuppyFLO is a self-hosted service that enables local/remote management of multiple
-        Klipper printers using Moonraker. 
-    </Overview>
-    <Category>HomeAutomation: Security:</Category>
-    <WebUI>http://[IP]:[PORT:9873]</WebUI>
-    <TemplateURL />
-    <Icon>https://avatars.githubusercontent.com/u/145094472?s=48&amp;amp;v=4</Icon>
-    <ExtraParams />
-    <PostArgs />
-    <CPUset />
-    <DateInstalled>1712941833</DateInstalled>
-    <DonateText>Buy me a coffee</DonateText>
-    <DonateLink> https://ko-fi.com/ballaswag </DonateLink>
-    <Requires />
-    <Config Name="Web UI" Target="9873" Default="" Mode="tcp" Description="" Type="Port"
-        Display="always" Required="false" Mask="false">9873</Config>
-    <Config Name="Tailscale Auth Key" Target="TS_AUTHKEY" Default="" Mode="" Description=""
-        Type="Variable" Display="always" Required="false" Mask="false">
-    </Config>
+	<Name>
+		GuppyFLO
+	</Name>
+	<Repository>
+		ballaswag/guppyflo:latest
+	</Repository>
+	<Registry>
+		https://registry.hub.docker.com/r/ballaswag/guppyflo
+	</Registry>
+	<Network>
+		bridge
+	</Network>
+	<MyIP />
+	<Shell>
+		sh
+	</Shell>
+	<Privileged>
+		false
+	</Privileged>
+	<Support>
+		https://forums.unraid.net/topic/161388-support-guppyflo/
+	</Support>
+	<Project>
+		https://github.com/ballaswag/guppyflo/
+	</Project>
+	<Overview>
+		GuppyFLO is a self-hosted service that enables local/remote management of multiple&#xD;
+		Klipper printers using Moonraker.
+	</Overview>
+	<Category>
+		HomeAutomation: Security:
+	</Category>
+	<WebUI>
+		http://[IP]:[PORT:9873]
+	</WebUI>
+	<TemplateURL>
+		https://raw.githubusercontent.com/iamlite/UnraidCA-GuppyFLO/master/GuppyFLO.xml
+	</TemplateURL>
+	<Icon>
+		https://avatars.githubusercontent.com/u/145094472?s=48&amp;amp;v=4
+	</Icon>
+	<ExtraParams />
+	<PostArgs />
+	<CPUset />
+	<DateInstalled>
+	</DateInstalled>
+	<DonateText>
+		Buy me a coffee
+	</DonateText>
+	<DonateLink>
+		https://ko-fi.com/ballaswag
+	</DonateLink>
+	<Requires />
+	<Config Name="Web UI" Target="9873" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">
+		9873
+	</Config>
+	<Config Name="Tailscale Auth Key" Target="TS_AUTHKEY" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">
+	</Config>
+	<Config Name="Config Path" Target="/guppyflo/config" Default="/mnt/user/appdata/guppyflo" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">
+		/mnt/user/appdata/guppyflo
+	</Config>
 </Container>
